@@ -1,0 +1,53 @@
+.rating-area {
+    @include flexCStart;
+    flex-direction: row-reverse;
+    column-gap: 3px;width: fit-content;
+}
+
+.rating-area:not(:checked)>input {
+    display: none;
+}
+
+.rating-area:not(:checked)>label {
+    padding: 0;
+    cursor: pointer;
+}
+
+.rating-area:not(:checked)>label:before {
+    content: '';
+    background-image: url(../img/icon/star-empty.svg);
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.rating-area>input:checked~label:before {
+    background-image: url(../img/icon/star-check.svg);
+}
+
+.rating-area>label:hover:before,
+.rating-area>input:checked:hover~label:before {
+    background-image: url(../img/icon/star-check.svg);
+}
+
+.rating-area>input:checked+label:hover:before,
+.rating-area>input:checked~label:hover:before {
+    background-image: url(../img/icon/star-check.svg);
+}
+
+.rating-area>input:checked~label:hover:before,
+.rating-area>input:checked~label:hover~label:before {
+    background-image: url(../img/icon/star-check.svg);
+}
+
+.rating-area>input:checked+label:hover:before,
+.rating-area>input:checked~label:hover:before,
+.rating-area>input:checked~label:hover~label:before,
+.rating-area>input:checked~label:hover~label:before {
+    background-image: url(../img/icon/star-check.svg);
+}
+
+.rate-area>label:active {
+    position: relative;
+}

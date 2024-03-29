@@ -1,0 +1,38 @@
+// .tabs {
+
+// }
+
+.block-info {
+    .tabs {
+
+        &__nav {
+            @include flexCStart;
+            column-gap: 10px;
+            margin-bottom: 20px;
+
+            &-item {
+                border: 1px solid $greyLine;
+                background-color: $F8F8F8;
+                border-radius: 8px;
+
+                &.tabs__nav-item--active {
+                    background-color: $white;
+                }
+            }
+
+            &-btn {
+                padding: 20px 40px;
+                font-family: "Gilroy";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                color: $greyText;
+                text-transform: uppercase;
+
+                &.tabs__nav-btn--active {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

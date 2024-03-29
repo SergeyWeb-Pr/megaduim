@@ -1,0 +1,39 @@
+.registration {
+    &__content {
+        max-width: 900px;
+    }
+
+    &__form {
+        margin-bottom: 52px;
+    }
+
+    &__form-radio {
+        margin-bottom: 52px;
+    }
+}
+
+.reg-comment {
+    &__title {
+        font-family: "Circe";
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__textarea {
+        height: 100px;
+        margin-bottom: 32px;
+    }
+
+    &__buttons {
+        margin-left: auto;
+        width: fit-content;
+        @include flexCStart;
+        column-gap: 28px;
+    }
+
+    &__button {
+        padding: 0 56px;
+    }
+}

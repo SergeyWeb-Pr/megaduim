@@ -1,0 +1,69 @@
+<section class="section section-hero registration">
+    <div class="container section-hero__container registration__container">
+        <div class="registration__sidebar sidebar">
+            <div class="sidebar__head">
+                <div class="sidebar__head-button"></div>
+                <div class="sidebar__head-name">Каталог</div>
+            </div>
+            <div class="sidebar__body">
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Электротехника</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Котлы и котельное оборудование</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Климатическое оборудование</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Водонагреватели</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+            </div>
+        </div>
+        <div class="registration__content">
+            @include('../../templates/breadcrumbs.html')
+            <h1 class="section-hero__title registration__title">Регистрация</h1>
+            <div action="#" class="form registration__form">
+                <div class="form__title">Контактные данные</div>
+                <div class="form__content">
+                    <label class="form__label">
+                        <div class="form__span">ФИО<span>*</span></div>
+                        <input type="text" name="" class="input-reset form__input" placeholder="Введите ваше ФИО">
+                    </label>
+                    <label class="form__label">
+                        <div class="form__span">Ваш телефон<span>*</span></div>
+                        <input type="text" name="" class="input-reset form__input"
+                            placeholder="Введите ваш номер телефона">
+                    </label>
+                    <label class="form__label">
+                        <div class="form__span">E-mail<span>*</span></div>
+                        <input type="text" name="" class="input-reset form__input" placeholder="Введите ваш E-mail">
+                    </label>
+                </div>
+            </div>
+            <div class="form-radio registration__form-radio">
+                <div class="form-radio__item">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                    <label for="radio-1">Юридическое лицо</label>
+                </div>
+                <div class="form-radio__item">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="radio-2">Физическое лицо</label>
+                </div>
+            </div>
+            <div class="reg-comment">
+                <div class="reg-comment__title">Комментарий</div>
+                <textarea name="" id="" class="input-reset form__textarea reg-comment__textarea"
+                    placeholder="Напишите ваш комментарий"></textarea>
+                <div class="reg-comment__buttons">
+                    <a href="" class="button-link-left reg-comment__link">Назад </a>
+                    <button class="button2 btn-reset reg-comment__button">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

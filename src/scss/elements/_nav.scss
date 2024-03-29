@@ -1,0 +1,26 @@
+.nav {
+
+    &__list {
+        @include flexCCenter;
+        column-gap: 30px;
+        height: 100%;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark;
+        @include transition(color);
+
+        &:hover {
+            // color: $green;
+        }
+    }
+}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mob) {}

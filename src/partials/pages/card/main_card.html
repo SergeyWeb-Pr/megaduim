@@ -1,0 +1,431 @@
+<section class="section card">
+    <div class="container">
+        @include('../../templates/breadcrumbs.html')
+        <div class="card__container">
+            <div class="card-image">
+                <div class="swiper product-single-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product1.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product2.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product3.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product4.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product1.png" />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-single-swiper__item">
+                                <img src="img/products/product2.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-single-thumb-swiper-wrapper">
+                    <div thumbsSlider="" class="swiper product-single-thumb-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product1.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product2.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product3.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product4.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product1.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-single-thumb-swiper__item">
+                                    <img src="img/products/product2.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-content__top">
+                    <div class="card-content__subname">APE</div>
+                    <div class="card-content__status">Нет в наличии</div>
+                    <!-- <div class="card-content__status check">В наличии</div> -->
+                </div>
+                <h1 class="card-content__name">Пресс угловой с креплением 1/2x20 APE 5/80</h1>
+                <div class="card-content__info">
+                    <div class="card-content__vendor">
+                        <div class="card-content__vendor-name">Артикул:</div>
+                        <div class="card-content__vendor-name">3AP1541220</div>
+                    </div>
+                    <div class="card-content__rating">
+                        <div class="rating-area ">
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                        </div>
+                        <div class="card-content__count-reviews">(10 отзывов)</div>
+                    </div>
+                </div>
+                <!-- <div class="card-content__pirce">9.80 <span>руб</span></div>
+                <div class="card-content__pirce">
+                    <div class="card-content__pirce-new">9.80 <span>руб</span></div>
+                    <div class="card-content__pirce-old">13 руб</div>
+                </div> -->
+                <div class="card-content__size">
+                    <div class="card-content__size-name">Другие размеры</div>
+                    <div class="card-content__size-items">
+                        <div class="card-content__size-item">20 мм х 1/2''</div>
+                        <div class="card-content__size-item">20 мм х 3/4''</div>
+                        <div class="card-content__size-item">26 мм х 3/4''</div>
+                        <div class="card-content__size-item">32 мм х 1''</div>
+                        <div class="card-content__size-item">20 мм х 1/2''</div>
+                        <div class="card-content__size-item">20 мм х 1/2''</div>
+                        <div class="card-content__size-item">20 мм х 1/2''</div>
+                    </div>
+                </div>
+                <div class="card-content__bottom">
+                    <div class="card-product__count">
+                        <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                            <svg width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round"></path>
+                            </svg>
+                        </button>
+                        <input type="number" value="1" class="card-product__count-num">
+                        <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="btn-reset button2 card-content__other">В корзину</button>
+                    <!-- <button class="btn-reset button2 card-content__other check">Похожие товары</button> -->
+                </div>
+                <div class="card-product__favourites">
+                    <div class="card-product__favourites-icon"></div>
+                    <span>Добавить в&nbsp;избранное</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section block-info">
+    <div class="container">
+        <div class="tabs" data-tabs="tab">
+            <ul class="list-reset tabs__nav">
+                <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Описание</button></li>
+                <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">характеристики</button>
+                </li>
+                <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">отзывы</button></li>
+            </ul>
+            <div class="tabs__content">
+                <div class="tabs__panel">
+                    <div class="tab-descr">
+                        <ul class="list-reset tab-descr__inner">
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Заводской номер</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">4PN6789056</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Вид фитинга</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">угол</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Тип соединения</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">под пресс</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Угол, о</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">90</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Диаметр, мм</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">16 х 1/2'' BP</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Диаметр трубы</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">16 мм</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Вид резьбы</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">внутренняя</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Вид фитинга</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">угол</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Заводской номер</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">4PN6789056</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Угол, о</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">90</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Тип соединения</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">под пресс</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Вид резьбы</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">внутренняя</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Диаметр, мм</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">16 х 1/2'' BP</div>
+                            </li>
+                            <li class="tab-descr__item">
+                                <div class="tab-descr__item-name">Диаметр трубы</div>
+                                <div class="tab-descr__item-line"></div>
+                                <div class="tab-descr__item-name">16 мм</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__panel">
+                    <div class="tab-content content">
+                        <p><b>Уголок с креплением пресс-гайка 16(2.0)*1/2" ш.</b> - предназначен для герметичного
+                            соединения участка трубопровода под углом 90* и переходом на внутреннюю резьбу с
+                            возможностью
+                            закрепления к стене.</p>
+                        <p>Технология производства позволяет замоноличивать пресс-фитинги в стяжку или в стену.</p>
+                        <p><b>Пресс-фитинги для металлопластиковых труб</b> - предназначены для создания, не разъемных
+                            соединений трубопроводов из металлопластиковой и пластиковой трубы, диаметром (толщина
+                            стенки трубы):
+                            16 (2) мм.</p>
+                        <p>Присоединительные элементы пресс-фитингов имеют трубную (дюймовую) резьбу по ГОСТ 6357 или
+                            ISO 228-1.</p>
+                        <p>Корпус пресс-фитинга, изготавливается методом горячей штамповки из высококачественной латуни
+                            с номинальным содержанием меди 58%.</p>
+                        <p>Все изделия выполнены в конфигурациях усиленного типа с увеличенной толщиной стенки корпуса и
+                            концевых буртов изделий.</p>
+                        <p>Пресс-гильза из нержавеющей стали.</p>
+                        <p>Штуцер фитинга имеет два уплотнительных кольца из EPDM.</p>
+                        <p><b>Преимущество:</b></p>
+                        <ul>
+                            <li>Быстрый и удобный монтаж</li>
+                            <li>Четкость соединения</li>
+                            <li>Штуцер типа TH обеспечивает надежность соединений</li>
+                            <li>Двойное уплотнительное кольцо, гарантирует динамическое соединение</li>
+                            <li>Пресс-гильза из нержавеющей стали сохраняет достаточную пластичность и повышает
+                                коррозионную
+                                стойкость соединений</li>
+                        </ul>
+                        <p>Рабочее давление: 16 бар при 20*С , 10 бар при 90*С.</p>
+                    </div>
+                </div>
+                <div class="tabs__panel">
+                    <!-- по макету может не быть -->
+                    <div class="tab-reviews">
+                        <div class="tab-reviews__item">
+                            <div class="tab-reviews__item-top">
+                                <div class="tab-reviews__item-name">Артур</div>
+                                <div class="tab-reviews__item-date">20.10.2023</div>
+                            </div>
+                            <div class="tab-reviews__item-rating">
+                                <div class="rating-area">
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                </div>
+                            </div>
+                            <div class="tab-reviews__item-content">
+                                <div class="tab-reviews__item-text js-tab-reviews-text">
+                                    <p><b>Уголок с креплением пресс-гайка 16(2.0)*1/2" ш.</b> - предназначен для
+                                        герметичного
+                                        соединения участка трубопровода под углом 90* и переходом на внутреннюю резьбу с
+                                        возможностью закрепления к стене. <br>
+                                        Технология производства позволяет замоноличивать пресс-фитинги в стяжку или в
+                                        стену.</p>
+                                    <p><b>Уголок с креплением пресс-гайка 16(2.0)*1/2" ш.</b> - предназначен для
+                                        герметичного
+                                        соединения участка трубопровода под углом 90* и переходом на внутреннюю резьбу с
+                                        возможностью закрепления к стене.
+                                        Технология производства позволяет замоноличивать пресс-фитинги в стяжку или в
+                                        стену.</p>
+                                </div>
+                                <button
+                                    class="btn-reset button-link tab-reviews__item-button js-tab-reviews-button">Читать
+                                    полностью</button>
+                            </div>
+                        </div>
+                        <div class="tab-reviews__item">
+                            <div class="tab-reviews__item-top">
+                                <div class="tab-reviews__item-name">Пётр</div>
+                                <div class="tab-reviews__item-date">20.10.2023</div>
+                            </div>
+                            <div class="tab-reviews__item-rating">
+                                <div class="rating-area">
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                </div>
+                            </div>
+                            <div class="tab-reviews__item-content">
+                                <div class="tab-reviews__item-text js-tab-reviews-text">
+                                    <p><b>Уголок с креплением пресс-гайка 16(2.0)*1/2" ш.</b> - предназначен для
+                                        герметичного
+                                        соединения участка трубопровода под углом 90* и переходом на внутреннюю резьбу с
+                                        возможностью закрепления к стене. <br>
+                                        Технология производства позволяет замоноличивать пресс-фитинги в стяжку или в
+                                        стену.</p>
+                                    <p><b>Уголок с креплением пресс-гайка 16(2.0)*1/2" ш.</b> - предназначен для
+                                        герметичного
+                                        соединения участка трубопровода под углом 90* и переходом на внутреннюю резьбу с
+                                        возможностью закрепления к стене.
+                                        Технология производства позволяет замоноличивать пресс-фитинги в стяжку или в
+                                        стену.</p>
+                                </div>
+                                <button
+                                    class="btn-reset button-link tab-reviews__item-button js-tab-reviews-button">Читать
+                                    полностью</button>
+                            </div>
+                        </div>
+                        <!-- по макету может не быть -->
+                        <button class="btn-reset button2 tab-reviews__button">Добавить отзыв</button>
+                    </div>
+                    <!-- по макету может не быть -->
+                    <form action="#" class="form tab-form">
+                        <div class="form__text">У данного товара нет отзывов. Оставьте ваш отзыв первым. </div>
+                        <label class="form__label">
+                            <div class="form__span">Ваше имя</div>
+                            <input type="text" name="" class="input-reset form__input" placeholder="Ваше имя">
+                        </label>
+                        <label class="form__label">
+                            <div class="form__span">Email</div>
+                            <input type="text" name="" class="input-reset form__input" placeholder="example@gmail.com">
+                        </label>
+                        <label class="form__label">
+                            <div class="form__span">Заголовок</div>
+                            <input type="text" name="" class="input-reset form__input"
+                                placeholder="Напишите заголовок отзыва">
+                        </label>
+                        <div class="form__label tab-form__rating">
+                            <div class="tab-form__rating-name">Оцените товар</div>
+                            <div class="tab-form__rating-count">
+                                <div class="rating-area ">
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="form__label form__label-textarea">
+                            <div class="form__span">Отзыв</div>
+                            <textarea name="" id="" class="input-reset form__textarea"
+                                placeholder="Оставьте ваш отзыв"></textarea>
+                        </label>
+                        <button class="btn-reset form__btn button2">Добавить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block-other">
+    <div class="container">
+        <h2 class="block-other__title h2">Рекомендуем</h2>
+        <div class="swiper swiper-style products-top-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product2.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+                <div class="swiper-slide">
+                    @include('./../../templates/card-product1.html')
+                </div>
+            </div>
+            <div class="swiper-button-prev products-swiper__swiper-button-prev"></div>
+            <div class="swiper-button-next products-swiper__swiper-button-next"></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+//библиотеки
+@import "./vendor/normalize";
+
+// стили для модального окна
+@import "../../node_modules/graph-modal/dist/graph-modal.min";
+
+// стили для табов
+@import "../../node_modules/graph-tabs/dist/graph-tabs.min";
+
+// стили для библиотеки aos
+// @import "../../node_modules/aos/dist/aos";
+
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// стили для фанси
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+
+// стили для скролла simplebar
+// @import "../../node_modules/simplebar/dist/simplebar.min";
+
+
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+//general
+@import "./general/_breakpoints";
+@import "./general/_colors";
+@import "./general/_mixins";
+@import "./general/_texts";
+@import "./general/_transitions";
+
+//elements
+@import "./elements/global";
+@import "./elements/nav";
+@import "./elements/buttons";
+@import "./elements/swiper-style";
+@import "./elements/content";
+@import "./elements/socials";
+@import "./elements/pagination";
+@import "./elements/card";
+@import "./elements/form";
+@import "./elements/rating";
+@import "./elements/tabs";
+@import "./elements/search";
+
+//templates
+@import "./templates/header";
+@import "./templates/footer";
+@import "./templates/menu";
+@import "./templates/breadcrumbs";
+
+//pages
+@import "./pages/main/index";
+@import "./pages/catalog/index";
+@import "./pages/card/index";
+@import "./pages/registration/index";

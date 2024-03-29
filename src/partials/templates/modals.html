@@ -1,0 +1,55 @@
+<div class="graph-modal">
+    <!-- Зарегистрируйтесь или войдите, если у вас уже есть личный кабинет  -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal1">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form1">
+                <div class="form__title">Зарегистрируйтесь или войдите, если у вас уже есть личный кабинет</div>
+                <button class="btn-reset button3 form__button1">
+                    <span>Вход</span>
+                    <div class="button3__img"></div>
+                </button>
+                <button class="btn-reset button-empty form__button2">Регистрация</button>
+            </div>
+        </div>
+    </div>
+    <!-- Войти по номеру телефона -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal2">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form2">
+                <div class="form__title">Войти по номеру телефона</div>
+                <label class="form__label">
+                    <div class="form__span">Ваш телефон<span>*</span></div>
+                    <input type="text" name="" class="input-reset form__input" placeholder="+375 ( _ _ ) _ _ _ –_ _–_ _">
+                    <button class="btn-reset form__label-button">Получить код</button>
+                    <!-- active при введеном номере -->
+                    <!-- <button class="btn-reset form__label-button active">Получить код</button> -->
+                </label>
+                <a href="" class="form__login">Войти через почту</a>
+                <div class="form__reg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+    <!-- Войти по почте -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal3">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form3">
+                <div class="form__title">Войти по почте</div>
+                <label class="form__label">
+                    <div class="form__span">Ваш E-mail</div>
+                    <input type="text" name="" class="input-reset form__input" placeholder="Введите ваш E-mail">
+                </label>
+                <label class="form__label">
+                    <div class="form__span">Пароль</div>
+                    <input type="password" name="" class="input-reset form__input js-form-input" placeholder="Введите пароль">
+                    <button class="btn-reset form__label-password show js-form-password-button"></button>
+                </label>
+                <button class="btn-reset button2 form__button2">Войти</button>
+                <a href="#" class="form__recovery">Не помню пароль</a>
+                <a href="#" class="form__reg">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</div>

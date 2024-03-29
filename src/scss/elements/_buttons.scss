@@ -1,0 +1,128 @@
+.button1 {
+    height: 40px;
+    @include flexCCenter;
+    column-gap: 12px;
+    width: fit-content;
+    cursor: pointer;
+    border: 1px solid $greyLine;
+    border-radius: 5px;
+    padding: 10px 16px;
+    position: relative;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $dark;
+        white-space: nowrap;
+    }
+}
+
+.button-link {
+    font-family: "Circe";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $grey;
+    padding-right: 14px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow/arrow-link-right.svg);
+        @include bg-cover;
+        width: 7px;
+        height: 12px;
+    }
+
+}
+
+.button-link-left {
+    font-family: "Circe";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $grey;
+    padding-left: 20px;
+    position: relative;
+    color: $blue;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow/arrow-left.svg);
+        @include bg-cover;
+        width: 10px;
+        height: 8px;
+    }
+}
+
+.button2 {
+    font-family: "Circe";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: $blue;
+    border-radius: 8px;
+    height: 42px;
+    @include flexCCenter;
+    color: $white;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.button3 {
+    background-color: $blue;
+    @include flexCCenter;
+    column-gap: 10px;
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+
+    span {
+        font-family: "Circe";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23.58px;
+        color: $white;
+    }
+
+    &__img {
+        width: 10px;
+        height: 7.8px;
+        background-image: url(../img/arrow/arrow-right-light.svg);
+        @include bg-cover;
+    }
+}
+
+.button-empty {
+    border: 2px solid $blue;
+    @include flexCCenter;
+    column-gap: 10px;
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+
+    font-family: "Circe";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.58px;
+    color: $blue;
+}

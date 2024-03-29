@@ -1,0 +1,108 @@
+//Flex
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexFsStart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin flexFsCenter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin flexFsEnd {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@mixin flexFsBetween {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@mixin flexCStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flexCCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flexCBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexFeStart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@mixin flexFeCenter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@mixin flexFeEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@mixin flexFeBetween {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+// Grid
+@mixin gridColumn($count) {
+  display: grid;
+  grid-template-columns: repeat($count, 1fr);
+}
+
+//Transition
+@mixin transition($type) {
+  transition: $type 0.2s ease-in-out;
+}
+
+// Image
+@mixin imageCoverWidth {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

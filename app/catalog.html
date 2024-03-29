@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/favicon.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Каталог</title>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts//OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ArialMT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+
+<body class="page__body main">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header-top">
+      <nav class="nav header-top__nav" title="">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Бренды</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-top__separator"></div>
+      <div class="header-top__location">
+        <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M9.0079 6.58166C8.3839 6.57084 7.77079 6.746 7.24668 7.08483C6.72257 7.42365 6.31117 7.91081 6.06488 8.48426C5.81859 9.0577 5.74856 9.69148 5.86371 10.3049C5.97886 10.9182 6.27398 11.4835 6.71147 11.9285C7.14897 12.3736 7.70904 12.6784 8.32035 12.8041C8.93166 12.9298 9.56655 12.8706 10.1441 12.6342C10.7217 12.3978 11.2159 11.9949 11.5637 11.4767C11.9115 10.9585 12.0971 10.3485 12.097 9.72436C12.1006 9.31516 12.0235 8.90929 11.8701 8.52989C11.7168 8.1505 11.4902 7.80503 11.2034 7.5132C10.9165 7.22137 10.575 6.9889 10.1983 6.82907C9.82159 6.66923 9.41709 6.58517 9.0079 6.58166ZM9.0079 11.4592C8.66331 11.4653 8.3247 11.3687 8.03522 11.1816C7.74575 10.9946 7.5185 10.7256 7.38244 10.4089C7.24638 10.0923 7.20767 9.74229 7.27123 9.40355C7.33478 9.06481 7.49774 8.75266 7.73934 8.50687C7.98093 8.26107 8.29023 8.09276 8.62782 8.02337C8.96542 7.95398 9.31602 7.98666 9.63498 8.11724C9.95393 8.24782 10.2268 8.4704 10.4188 8.75661C10.6108 9.04282 10.7133 9.37971 10.7131 9.72436C10.717 10.1806 10.5395 10.6197 10.2198 10.9452C9.90002 11.2707 9.46414 11.455 9.0079 11.4592ZM14.137 4.19069C13.4736 3.43228 12.6517 2.82894 11.7293 2.42336C10.807 2.01779 9.80672 1.81991 8.79941 1.84372C4.35029 1.84372 2.02148 5.52581 2.02148 9.162C2.02148 13.9229 8.41877 21.2756 8.69612 21.5951C8.75758 21.6706 8.83478 21.7318 8.92232 21.7744C9.00987 21.817 9.10566 21.84 9.20301 21.8418H9.21448C9.31076 21.8386 9.40539 21.8159 9.49267 21.7752C9.57995 21.7344 9.65807 21.6764 9.72232 21.6046C10.8582 20.3264 11.8983 18.9662 12.8344 17.5352C14.9318 14.3447 15.9905 11.5185 15.9905 9.14957C15.9829 7.32806 15.3257 5.56902 14.137 4.18878V4.19069ZM9.22692 20.0361C7.72825 18.2037 3.4159 12.6566 3.4159 9.14957C3.4159 6.31101 5.11062 3.25056 8.81089 3.25056C9.58355 3.2408 10.3502 3.38748 11.0647 3.68177C11.7792 3.97606 12.4268 4.41188 12.9684 4.963C13.51 5.51411 13.9346 6.16913 14.2164 6.88862C14.4983 7.60811 14.6317 8.37719 14.6085 9.14957C14.6085 13.2783 10.6558 18.3328 9.22692 20.0361Z"
+            fill="#4F649A" />
+        </svg>
+        <span>Минск</span>
+      </div>
+      <div class="header-top__tel">
+        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.7936 10.7416L12.7937 10.7416L12.8006 10.7345C12.8993 10.6328 13.0342 10.5742 13.1759 10.5716C13.3153 10.5689 13.4501 10.6206 13.552 10.7154L16.0089 13.1797C16.1065 13.2825 16.1602 13.4194 16.1585 13.5614C16.1567 13.7046 16.0986 13.8414 15.9967 13.9421C15.9966 13.9422 15.9964 13.9424 15.9962 13.9425L15.4439 14.4849L15.3418 14.5645C15.0932 14.7582 14.8176 14.9144 14.5237 15.028L14.5237 15.028L14.5191 15.0298C14.2503 15.1358 13.969 15.2072 13.6822 15.2423C13.65 15.2453 13.4383 15.2627 13.0779 15.2325C12.6854 15.1996 12.1145 15.1102 11.4053 14.8831C9.99087 14.4302 8.00108 13.4217 5.76474 11.1797L5.76449 11.1795C2.45429 7.864 1.42886 5.60691 1.71277 3.24751L1.71305 3.24507C1.74692 2.9556 1.81726 2.67154 1.92238 2.3997C2.03729 2.10344 2.19458 1.82544 2.38935 1.57436L2.49543 1.4376L3.00666 0.921688L3.00673 0.921757L3.01513 0.913002C3.06341 0.862668 3.12116 0.822371 3.18502 0.794427C3.24891 0.766469 3.31768 0.751406 3.38738 0.750094C3.45702 0.748783 3.5263 0.761242 3.59126 0.786803C3.65454 0.811699 3.71237 0.848497 3.76163 0.895171L6.21881 3.35873C6.31518 3.46183 6.36774 3.59847 6.36517 3.73975C6.36257 3.88309 6.30345 4.01959 6.20065 4.11955L6.20059 4.11949L6.19247 4.12763L5.78197 4.53923L5.78193 4.53928L4.94695 5.37636L4.54103 5.78332L4.82847 6.28108C4.85686 6.33024 4.88415 6.38001 4.91657 6.43912C4.92637 6.45698 4.93663 6.47569 4.94753 6.4955C6.13966 8.86288 8.05793 10.7867 10.4218 11.9858L10.6543 12.1152L11.1499 12.391L11.5502 11.9892L12.7936 10.7416Z"
+            stroke="#4F649A" stroke-width="1.5" />
+        </svg>
+
+        <a href="tel:+375 17 123-45-67">+375 17 123-45-67</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="header-bottom__logo">
+        <img loading="lazy" src="img/logo/head-logo.png" class="image" width="" height="" alt="">
+      </div>
+      <div class="header-bottom__content">
+        <div class="header-bottom__search header-bottom__search-desktop search">
+          <input class="input-reset search__input" type="text" placeholder="Введите поисковой запрос">
+          <button class="btn-reset search__button"></button>
+        </div>
+        <button class="btn-reset header-bottom__favorites">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10 4.09353L9.86407 3.93889C8.91655 2.8609 7.46278 2.17778 5.95 2.17778C3.27413 2.17778 1.18 4.21148 1.18 6.79564C1.18 8.38407 1.91572 9.8399 3.24766 11.4186C4.57658 12.9938 6.47931 14.6689 8.78883 16.7022L8.81438 16.7247L9.99955 17.7621L11.1851 16.7164L11.1869 16.7149C13.5074 14.6763 15.4188 12.9971 16.7524 11.4175C18.0843 9.83989 18.82 8.38407 18.82 6.79564C18.82 4.21148 16.7259 2.17778 14.05 2.17778C12.5372 2.17778 11.0834 2.8609 10.1359 3.93889L10 4.09353ZM10 18L8.695 16.8578L8.65947 16.8265C4.04437 12.7634 1 10.0831 1 6.79564C1 4.11008 3.178 2 5.95 2C7.4528 2 8.89757 2.65041 9.8787 3.68923C9.91996 3.73292 9.96041 3.7773 10 3.82234C10.0396 3.7773 10.08 3.73292 10.1213 3.68923C11.1024 2.65041 12.5472 2 14.05 2C16.822 2 19 4.11008 19 6.79564C19 10.0888 15.945 12.7727 11.3164 16.839L11.305 16.849L10 18Z"
+              stroke="#4F649A" stroke-width="0.8" />
+          </svg>
+          <span>Избранное</span>
+        </button>
+        <button class="btn-reset header-bottom__cabinet">
+          <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_84_9721" fill="white">
+              <path
+                d="M19.5683 21.0341C19.5683 19.7821 19.3216 18.5423 18.8425 17.3856C18.3634 16.2288 17.6611 15.1778 16.7758 14.2925C15.8904 13.4072 14.8394 12.7049 13.6827 12.2257C12.5259 11.7466 11.2862 11.5 10.0341 11.5C8.78209 11.5 7.54231 11.7466 6.38557 12.2257C5.22884 12.7049 4.17781 13.4072 3.29248 14.2925C2.40716 15.1778 1.70488 16.2288 1.22574 17.3856C0.746607 18.5423 0.5 19.7821 0.5 21.0341L10.0341 21.0341H19.5683Z" />
+            </mask>
+            <path
+              d="M19.5683 21.0341C19.5683 19.7821 19.3216 18.5423 18.8425 17.3856C18.3634 16.2288 17.6611 15.1778 16.7758 14.2925C15.8904 13.4072 14.8394 12.7049 13.6827 12.2257C12.5259 11.7466 11.2862 11.5 10.0341 11.5C8.78209 11.5 7.54231 11.7466 6.38557 12.2257C5.22884 12.7049 4.17781 13.4072 3.29248 14.2925C2.40716 15.1778 1.70488 16.2288 1.22574 17.3856C0.746607 18.5423 0.5 19.7821 0.5 21.0341L10.0341 21.0341H19.5683Z"
+              stroke="#4F649A" stroke-width="2" mask="url(#path-1-inside-1_84_9721)" />
+            <circle cx="10.0115" cy="5.52709" r="4.52709" stroke="#4F649A" />
+          </svg>
+          <span>Войти</span>
+        </button>
+        <button class="btn-reset button1 header-bottom__price">
+          <div class="header-bottom__price-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_84_9729)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.730175 2.48308H2.84888L5.87329 13.4241C5.91641 13.5825 6.00996 13.722 6.13929 13.8207C6.26862 13.9193 6.42645 13.9716 6.5881 13.9693H15.8807C16.0238 13.9692 16.1637 13.9274 16.2841 13.8488C16.4045 13.7702 16.5002 13.6581 16.5598 13.5259L19.9401 5.73994C19.9882 5.62772 20.0078 5.50502 19.9972 5.3831C19.9866 5.26118 19.9461 5.14396 19.8794 5.04207C19.8112 4.93851 19.7188 4.85372 19.6106 4.79536C19.5023 4.737 19.3815 4.70683 19.2589 4.7076H4.99564L5.07648 5L5.21473 5.5L5.40569 6.19066H18.1252L15.3861 12.4863H7.14638L4.12128 1.54525C4.07718 1.38736 3.98338 1.24857 3.85427 1.15008C3.72516 1.0516 3.56785 0.998862 3.40646 1.00002H0.728037C0.632288 1.00016 0.53748 1.01951 0.449074 1.0569C0.360667 1.0943 0.280384 1.14901 0.212779 1.21797C0.145174 1.28693 0.0915718 1.3688 0.0550605 1.45882C0.0185492 1.54884 -0.000140017 1.64524 7.89741e-07 1.74262C0.000141596 1.83999 0.019118 1.93642 0.0558895 2.02633C0.0926609 2.11624 0.146502 2.19789 0.214306 2.26664C0.28211 2.3354 0.362567 2.38987 0.45108 2.427C0.539594 2.46413 0.634426 2.48323 0.730175 2.48308ZM5.88755 19.1818C6.21299 19.1766 6.52969 19.0737 6.79783 18.8861C7.06596 18.6985 7.27359 18.4344 7.39463 18.1272C7.51567 17.8199 7.54472 17.4831 7.47813 17.1591C7.41154 16.8351 7.2523 16.5383 7.02038 16.3061C6.78846 16.0738 6.49422 15.9165 6.17463 15.8538C5.85505 15.791 5.52436 15.8258 5.22413 15.9536C4.9239 16.0814 4.66752 16.2966 4.48719 16.5722C4.30687 16.8478 4.21067 17.1714 4.21063 17.5024C4.21441 17.9512 4.39311 18.3801 4.70752 18.6949C5.02193 19.0098 5.44632 19.1849 5.88755 19.1818ZM16.3746 19.1818H16.4976C16.7165 19.1662 16.9302 19.1068 17.1265 19.007C17.3227 18.9072 17.4977 18.7689 17.6413 18.6002C17.7865 18.435 17.8975 18.2417 17.9675 18.0319C18.0375 17.822 18.0652 17.5999 18.0487 17.3789C18.0299 17.0465 17.9157 16.727 17.7204 16.4598C17.525 16.1926 17.257 15.9895 16.9494 15.8754C16.6418 15.7614 16.3081 15.7414 15.9895 15.818C15.6709 15.8946 15.3813 16.0644 15.1566 16.3065C14.9318 16.5486 14.7816 16.8523 14.7246 17.1802C14.6676 17.5081 14.7063 17.8458 14.8358 18.1516C14.9654 18.4574 15.1801 18.7178 15.4536 18.9009C15.7271 19.084 16.0472 19.1817 16.3746 19.1818Z"
+                  fill="#4D4D4D" />
+              </g>
+              <defs>
+                <clipPath id="clip0_84_9729">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <span class="header-bottom__price-name">489,99 руб</span>
+          <div class="header-bottom__price-label">4</div>
+        </button>
+      </div>
+    </div>
+    <div class="header-search">
+      <div class="header-bottom__search header-bottom__search-mobile search">
+        <input class="input-reset search__input" type="text" placeholder="Введите поисковой запрос">
+        <button class="btn-reset search__button"></button>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="catalog">
+    <div class="container catalog__container">
+        <div class="catalog-filter">
+            <div class="catalog-filter__name">Фильтр</div>
+            <div class="catalog-filter__items">
+                <div class="catalog-filter__item">
+                    <button class="btn-reset catalog-filter__item-name">Производитель</button>
+                    <div class="catalog-filter__item-content">
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="ITAP" id="ITAP">
+                            <label class="form-check-label" for="ITAP">ITAP</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="Wiega" id="Wiega">
+                            <label class="form-check-label" for="Wiega">Wiega</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="General Fittings"
+                                id="General Fittings">
+                            <label class="form-check-label" for="General Fittings">General Fittings</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="Wester" id="Wester">
+                            <label class="form-check-label" for="Wester">Wester</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-filter__item">
+                    <button class="btn-reset catalog-filter__item-name">Вид резьбового соединения</button>
+                    <div class="catalog-filter__item-content">
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="с наружной резьбой"
+                                id="с наружной резьбой">
+                            <label class="form-check-label" for="с наружной резьбой">с наружной резьбой</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="с внутренней и наружной резьбой"
+                                id="с внутренней и наружной резьбой">
+                            <label class="form-check-label" for="с внутренней и наружной резьбой">с внутренней и
+                                наружной резьбой</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="с внутренней резьбой"
+                                id="с внутренней резьбой">
+                            <label class="form-check-label" for="с внутренней резьбой">с внутренней резьбой</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-filter__item">
+                    <button class="btn-reset catalog-filter__item-name">Тип</button>
+                    <div class="catalog-filter__item-content">
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="тип1" id="тип1">
+                            <label class="form-check-label" for="тип1">тип1</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="тип2" id="тип2">
+                            <label class="form-check-label" for="тип2">тип2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-filter__item">
+                    <button class="btn-reset catalog-filter__item-name">Диаметр резьбы</button>
+                    <div class="catalog-filter__item-content">
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="Диаметр резьбы1"
+                                id="Диаметр резьбы1">
+                            <label class="form-check-label" for="Диаметр резьбы1">Диаметр резьбы1</label>
+                        </div>
+                        <div class="catalog-filter__form-check form-check">
+                            <input class="form-check-input" type="checkbox" value="Диаметр резьбы2"
+                                id="Диаметр резьбы2">
+                            <label class="form-check-label" for="Диаметр резьбы2">Диаметр резьбы2</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-content">
+            <div class="breadcrumbs">
+  <a href="#">
+    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-outside-1_84_10392" maskUnits="userSpaceOnUse" x="-0.0625" y="0" width="18" height="16"
+        fill="black">
+        <rect fill="white" x="-0.0625" width="18" height="16" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15.0619 9.03125L8.99968 2L2.9375 9.03125H3.99968V15H6.99962V10H10.9996V15H13.9997V9.03125H15.0619Z" />
+      </mask>
+      <path
+        d="M8.99968 2L9.75705 1.34701L8.99968 0.468574L8.24231 1.34701L8.99968 2ZM15.0619 9.03125V10.0312H17.2444L15.8192 8.37826L15.0619 9.03125ZM2.9375 9.03125L2.18013 8.37826L0.754965 10.0312H2.9375V9.03125ZM3.99968 9.03125H4.99968V8.03125H3.99968V9.03125ZM3.99968 15H2.99968V16H3.99968V15ZM6.99962 15V16H7.99962V15H6.99962ZM6.99962 10V9H5.99962V10H6.99962ZM10.9996 10H11.9996V9H10.9996V10ZM10.9996 15H9.99962V16H10.9996V15ZM13.9997 15V16H14.9997V15H13.9997ZM13.9997 9.03125V8.03125H12.9997V9.03125H13.9997ZM8.24231 2.65299L14.3045 9.68424L15.8192 8.37826L9.75705 1.34701L8.24231 2.65299ZM3.69487 9.68424L9.75705 2.65299L8.24231 1.34701L2.18013 8.37826L3.69487 9.68424ZM3.99968 8.03125H2.9375V10.0312H3.99968V8.03125ZM2.99968 9.03125V15H4.99968V9.03125H2.99968ZM3.99968 16H6.99962V14H3.99968V16ZM7.99962 15V10H5.99962V15H7.99962ZM6.99962 11H10.9996V9H6.99962V11ZM9.99962 10V15H11.9996V10H9.99962ZM10.9996 16H13.9997V14H10.9996V16ZM14.9997 15V9.03125H12.9997V15H14.9997ZM15.0619 8.03125H13.9997V10.0312H15.0619V8.03125Z"
+        fill="#4F649A" mask="url(#path-1-outside-1_84_10392)" />
+    </svg>
+  </a>
+  <div class="breadcrumbs__separator"></div>
+  <a>Пресс системы</a>
+  <div class="breadcrumbs__separator"></div>
+  <span>Американки</span>
+</div>
+            <button class="btn-reset catalog-content__sort">Сортировать по</button>
+            <div class="catalog-content__items">
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением ½×20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                <button class="btn-reset catalog-content__button">Показать еще</button>
+                <div class="pagination catalog-content__pagination">
+                    <div class="pagination__item active">1</div>
+                    <div class="pagination__item">2</div>
+                    <div class="pagination__item">3</div>
+                    <div class="pagination__item">4</div>
+                    <div class="pagination__item">…</div>
+                    <div class="pagination__item">35</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="section hero">
+    <div class="container hero__container">
+        <div class="hero__sidebar sidebar">
+            <div class="sidebar__head">
+                <div class="sidebar__head-button"></div>
+                <div class="sidebar__head-name">Каталог</div>
+            </div>
+            <div class="sidebar__body">
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Электротехника</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Котлы и котельное оборудование</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Климатическое оборудование</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+                <a href="#" class="sidebar__body-item">
+                    <div class="sidebar__body-name">Водонагреватели</div>
+                    <div class="sidebar__body-button"></div>
+                </a>
+            </div>
+        </div>
+        <div class="hero__content">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="hero-swiper__item" style="background-image: url(img/image/image1.jpg);">
+                            <div class="hero-swiper__item-inner">
+                                <div class="hero-swiper__item-text">
+                                    <p>Большой выбор душевых кабин</p>
+                                    <p>Не пропусти такую</p>
+                                </div>
+                                <div class="hero-swiper__item-button">
+                                    <span>от 102 руб</span>
+                                    <svg width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 4.99805C4.99914 5.16543 4.93488 5.32644 4.82007 5.44824L1.05005 9.31787C0.934574 9.43304 0.778081 9.49805 0.61499 9.49805C0.4519 9.49805 0.295407 9.43304 0.179932 9.31787C0.0644593 9.19851 -2.00599e-08 9.03912 -2.73196e-08 8.87305C-3.45784e-08 8.70697 0.0644592 8.54758 0.179932 8.42822L3.52002 4.99805L0.179931 1.57812C0.0644589 1.45877 -3.58396e-07 1.29889 -3.65656e-07 1.13281C-3.72915e-07 0.96674 0.0644589 0.807346 0.179931 0.687988C0.235983 0.628986 0.303635 0.581909 0.378418 0.549805C0.4532 0.5177 0.533607 0.501465 0.61499 0.501465C0.696372 0.501465 0.777024 0.5177 0.851806 0.549805C0.926588 0.581909 0.993996 0.628986 1.05005 0.687988L4.82007 4.55811C4.87754 4.616 4.92297 4.68475 4.95386 4.76025C4.98475 4.83576 5.00042 4.91647 5 4.99805Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="hero-swiper__item" style="background-image: url(img/image/image1.jpg);">
+                            <div class="hero-swiper__item-inner">
+                                <div class="hero-swiper__item-text">
+                                    <p>Большой выбор душевых кабин</p>
+                                    <p>Не пропусти такую</p>
+                                </div>
+                                <div class="hero-swiper__item-button">
+                                    <span>от 102 руб</span>
+                                    <svg width="5" height="10" viewBox="0 0 5 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 4.99805C4.99914 5.16543 4.93488 5.32644 4.82007 5.44824L1.05005 9.31787C0.934574 9.43304 0.778081 9.49805 0.61499 9.49805C0.4519 9.49805 0.295407 9.43304 0.179932 9.31787C0.0644593 9.19851 -2.00599e-08 9.03912 -2.73196e-08 8.87305C-3.45784e-08 8.70697 0.0644592 8.54758 0.179932 8.42822L3.52002 4.99805L0.179931 1.57812C0.0644589 1.45877 -3.58396e-07 1.29889 -3.65656e-07 1.13281C-3.72915e-07 0.96674 0.0644589 0.807346 0.179931 0.687988C0.235983 0.628986 0.303635 0.581909 0.378418 0.549805C0.4532 0.5177 0.533607 0.501465 0.61499 0.501465C0.696372 0.501465 0.777024 0.5177 0.851806 0.549805C0.926588 0.581909 0.993996 0.628986 1.05005 0.687988L4.82007 4.55811C4.87754 4.616 4.92297 4.68475 4.95386 4.76025C4.98475 4.83576 5.00042 4.91647 5 4.99805Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination hero-swiper__swiper-pagination"></div>
+            </div>
+            <div class="block-products block-new-products">
+                <div class="block-products__top">
+                    <h2 class="block-products__title h2">Новинки</h2>
+                    <a href="#" class="button-link block-products__link">Смотреть все</a>
+                </div>
+                <div class="swiper swiper-style products-new-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price">
+                <div class="card-product__price-old"><span>133</span> руб</div>
+                <div class="card-product__price-new"><span>119.80</span> руб</div>
+            </div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon active"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev products-swiper__swiper-button-prev"></div>
+                    <div class="swiper-button-next products-swiper__swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section block-banner">
+    <div class="container">
+        <div class="block-banner__inner" style="background-image: url(img/image/image3.jpg);">
+            <div class="block-banner__content">
+                <div class="block-banner__name">Закажи сантехнику со скидкой</div>
+                <div class="block-banner__text">
+                    <p>Мы реализуем только сертифицированную продукцию</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section block-products block-top-products">
+    <div class="container">
+        <div class="block-products__top">
+            <h2 class="block-products__title h2">ТОП продаж</h2>
+            <a href="#" class="button-link block-products__link">Смотреть все</a>
+        </div>
+        <ul class="block-products__categories">
+            <li class="block-products__category active">Фитинги</li>
+            <li class="block-products__category">Насосы</li>
+            <li class="block-products__category">Радиаторы</li>
+            <li class="block-products__category">Рекомендуем</li>
+            <li class="block-products__category">Системы для отопления</li>
+            <li class="block-products__category">Системы для отопления</li>
+            <li class="block-products__category">Запорная арматура</li>
+            <li class="block-products__category">Сантехника</li>
+            <li class="block-products__category">Приборы учета и КИП</li>
+            <li class="block-products__category">Электротехника</li>
+            <li class="block-products__category">Котлы</li>
+        </ul>
+        <div class="swiper swiper-style products-top-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price">
+                <div class="card-product__price-old"><span>133</span> руб</div>
+                <div class="card-product__price-new"><span>119.80</span> руб</div>
+            </div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon active"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="swiper-button-prev products-swiper__swiper-button-prev"></div>
+            <div class="swiper-button-next products-swiper__swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section block-brands">
+    <div class="container">
+        <h2 class="block-brands__title h2">Наши бренДы</h2>
+        <div class="block-brands__items">
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand1.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand2.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand3.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand2.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand4.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+            <div class="block-brands__item">
+                <div class="block-brands__item-image">
+                    <img loading="lazy" src="img/brands/brand3.png" class="image" width="" height="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section block-contacts">
+    <div class="container">
+        <h2 class="block-contacts__title h2">Контакты</h2>
+        <div class="block-contacts__container">
+            <div class="block-contacts__content">
+                <div class="block-contacts__text">
+                    <p><b>Мегадюйм</b> - компания, занимающаяся оптовой продажей сантехники и сантехнических изделий.
+                    </p>
+                    <br>
+                    <p>Компания располагает широким ассортиментом сантехнического оборудования.</p>
+                    <p>Здесь клиенты могут найти товары из:</p>
+                    <ul>
+                        <li>Италии (ITAP, APE, General Fittings);</li>
+                        <li>Польши (Armakan, AQUER);</li>
+                        <li>Чехии (Ekoplastik-Wavin);</li>
+                        <li>Германии (Viega);</li>
+                        <li>России (Wester, Energoflex);</li>
+                        <li>Беларуси (Bip-M).</li>
+                        <li>Только сертифицированная продукция.</li>
+                    </ul>
+                </div>
+                <div class="block-contacts__info">
+                    <div class="block-contacts__item">
+                        <div class="block-contacts__item-icon">
+                            <img loading="lazy" src="img/icon/location.svg" class="image" width="" height="" alt="">
+                        </div>
+                        <div class="block-contacts__item-right">
+                            <div class="block-contacts__item-name">Адрес</div>
+                            <span>г. Минск, пер. Бехтерева, 10/2</span>
+                        </div>
+                    </div>
+                    <div class="block-contacts__item">
+                        <div class="block-contacts__item-icon">
+                            <img loading="lazy" src="img/icon/mail.svg" class="image" width="" height="" alt="">
+                        </div>
+                        <div class="block-contacts__item-right">
+                            <div class="block-contacts__item-name">Email</div>
+                            <a href="mailto:megaduim@gmail.com">megaduim@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="block-contacts__item">
+                        <div class="block-contacts__item-icon">
+                            <img loading="lazy" src="img/icon/tel.svg" class="image" width="" height="" alt="">
+                        </div>
+                        <div class="block-contacts__item-right">
+                            <div class="block-contacts__item-name">Телефон</div>
+                            <a href="tel:+ 375 (29) 878-26-84">+ 375 (29) 878-26-84</a>
+                            <a href="tel:+ 375 (29) 123-45-67">+ 375 (29) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="block-contacts__item">
+                        <div class="block-contacts__item-icon">
+                            <img loading="lazy" src="img/icon/blank.svg" class="image" width="" height="" alt="">
+                        </div>
+                        <div class="block-contacts__item-right">
+                            <div class="block-contacts__item-name">Режим работы</div>
+                            <span><b>Ежедневно</b> с 9:00–17:00, обед с 14:00–15:00
+                                <b>Сб, вс - выходной</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-contacts__map">
+                <div id="map1" class="map"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block-other">
+    <div class="container">
+        <h2 class="block-other__title h2">Рекомендуем</h2>
+        <div class="swiper swiper-style products-top-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+                <div class="card-product__label item1">Акция</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price">
+                <div class="card-product__price-old"><span>133</span> руб</div>
+                <div class="card-product__price-new"><span>119.80</span> руб</div>
+            </div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon active"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-product">
+    <div class="card-product__head">
+        <div class="card-product__image">
+            <div class="swiper card-photo-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
+                    </div>
+                </div>
+                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="card-product__content-mob">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+    </div>
+    <div class="card-product__body">
+        <div class="card-product__content-desck">
+            <div class="card-product__check">
+                <div class="card-product__status item1">В наличии</div>
+            </div>
+            <div class="card-product__name1">APE</div>
+            <a href="#" class="card-product__name2">Пресс угловой с креплением 1/2x20 APE
+                5/80</a>
+            <div class="card-product__articles">Арт. 5678909</div>
+        </div>
+        <div class="card-product__line"></div>
+        <div class="card-product__total">
+            <div class="card-product__count">
+                <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <input type="number" value="1" class="card-product__count-num">
+                <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="card-product__price-single"><span>69.30</span> руб</div>
+        </div>
+        <button class="btn-reset button2 card-product__button">В корзину</button>
+        <div class="card-product__favourites">
+            <div class="card-product__favourites-icon"></div>
+            <span>Добавить в избранное</span>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="swiper-button-prev products-swiper__swiper-button-prev"></div>
+            <div class="swiper-button-next products-swiper__swiper-button-next"></div>
+        </div>
+    </div>
+</section> -->
+
+    </main>
+    <div class="graph-modal">
+    <!-- Зарегистрируйтесь или войдите, если у вас уже есть личный кабинет  -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal1">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form1">
+                <div class="form__title">Зарегистрируйтесь или войдите, если у вас уже есть личный кабинет</div>
+                <button class="btn-reset button3 form__button1">
+                    <span>Вход</span>
+                    <div class="button3__img"></div>
+                </button>
+                <button class="btn-reset button-empty form__button2">Регистрация</button>
+            </div>
+        </div>
+    </div>
+    <!-- Войти по номеру телефона -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal2">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form2">
+                <div class="form__title">Войти по номеру телефона</div>
+                <label class="form__label">
+                    <div class="form__span">Ваш телефон<span>*</span></div>
+                    <input type="text" name="" class="input-reset form__input" placeholder="+375 ( _ _ ) _ _ _ –_ _–_ _">
+                    <button class="btn-reset form__label-button">Получить код</button>
+                    <!-- active при введеном номере -->
+                    <!-- <button class="btn-reset form__label-button active">Получить код</button> -->
+                </label>
+                <a href="" class="form__login">Войти через почту</a>
+                <div class="form__reg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+    <!-- Войти по почте -->
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal3">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+            <div class="form reg-form form3">
+                <div class="form__title">Войти по почте</div>
+                <label class="form__label">
+                    <div class="form__span">Ваш E-mail</div>
+                    <input type="text" name="" class="input-reset form__input" placeholder="Введите ваш E-mail">
+                </label>
+                <label class="form__label">
+                    <div class="form__span">Пароль</div>
+                    <input type="password" name="" class="input-reset form__input js-form-input" placeholder="Введите пароль">
+                    <button class="btn-reset form__label-password show js-form-password-button"></button>
+                </label>
+                <button class="btn-reset button2 form__button2">Войти</button>
+                <a href="#" class="form__recovery">Не помню пароль</a>
+                <a href="#" class="form__reg">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="footer__copy">
+            <p>© 2021-2023 Мегадюйм</p>
+            <p>ООО «Мегадюйм» УНП 193510749, Юридический адрес: 220021, Республика Беларусь, г. Минск, пер. Бехтерева, 10</p>
+        </div>
+    </div>
+</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.breadcrumbs {
+    @include flexCStart;
+    column-gap: 7px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $darkText;
+        text-decoration: underline;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $darkTextLink;
+
+    }
+
+    &__separator {
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icon/separator.svg);
+        @include bg-cover;
+    }
+}

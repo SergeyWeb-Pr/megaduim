@@ -1,0 +1,55 @@
+.catalog {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .breadcrumbs {
+        margin-top: 0;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    &-content {
+        &__sort {
+            border: 1px solid $EFEFEF;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $greyText;
+            border: 1px solid $EFEFEF;
+            background-color: $F8F8F8;
+            height: 40px;
+            padding: 9px 37px 9px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        &__items {
+            @include gridColumn(4);
+            column-gap: 16px;
+            row-gap: 26px;
+        }
+
+        &__button {
+            grid-column: 1/5;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            background: $dark;
+            background-color: $blueLight;
+            height: 60px;
+            @include flexCCenter;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        &__pagination {
+            grid-column: 1/5;
+            margin-top: -6px;
+        }
+    }
+
+
+}

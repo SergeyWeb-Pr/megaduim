@@ -1,0 +1,31 @@
+.pagination {
+    @include flexCCenter;
+    column-gap: 0px;
+
+    &__item {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $dark;
+        position: relative;
+        z-index: 1;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        @include flexCCenter;
+        cursor: pointer;
+        background: transparent;
+        transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+        border-radius: 4px;
+
+        &.active {
+            color: $white;
+            background: $blue;
+        }
+
+        &:hover {
+            color: $white;
+            background: $blue;
+        }
+    }
+}

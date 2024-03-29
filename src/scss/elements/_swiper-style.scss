@@ -1,0 +1,118 @@
+.swiper-style {
+    position: relative;
+    overflow: inherit;
+
+    .swiper-slide {
+        @include transition(opacity);
+        opacity: 0;
+
+        * {
+            box-sizing: border-box;
+        }
+
+        &.swiper-slide-visible {
+            opacity: 1;
+        }
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 55px;
+        margin-top: 0;
+        flex-shrink: 0;
+        @include bg-cover;
+        opacity: 1;
+        cursor: pointer;
+        @include transition(background-image);
+    }
+
+    .swiper-button-prev {
+        background-image: url(../img/arrow/arrow-but-left.svg);
+        left: -40px;
+    }
+
+    .swiper-button-next {
+        background-image: url(../img/arrow/arrow-but-right.svg);
+        right: -40px;
+    }
+
+    .swiper-scrollbar {
+        margin-top: 30px;
+        position: static;
+        background-color: $blueLight;
+        border-radius: 33px;
+        height: 3px;
+        cursor: pointer;
+
+        &-drag {
+            background-color: $blue;
+            border-radius: 33px;
+            height: 3px;
+        }
+    }
+}
+
+.card-image {
+    display: flex;
+    column-gap: 20px;
+}
+
+.product-single-thumb-swiper-wrapper {
+    height: 472px;
+    flex-shrink: 0;
+}
+
+.product-single-thumb-swiper {
+    height: 100%;
+
+    .swiper-slide.swiper-slide-thumb-active {
+        .product-single-thumb-swiper__item {
+            border: 1px solid $greyLine;
+        }
+    }
+
+    &__item {
+        height: 100%;
+        width: 110px;
+        border-radius: 8px;
+        overflow: hidden;
+        @include flexCCenter;
+        border: 1px solid transparent;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+.product-single-swiper {
+    width: 742px;
+
+    &__item {
+        border: 1px solid $greyLine;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mob) {
+    .swiper-style .swiper-scrollbar {
+        margin-top: 16px;
+    }
+}
