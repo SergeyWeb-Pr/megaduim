@@ -401,24 +401,78 @@ $(document).ready(function () {
 /***/ (() => {
 
 $(document).ready(function () {
+  //показать полный текст
   $('.js-catalog-preview-button').click(function () {
     $(this).addClass('hide');
     $(this).siblings('.js-catalog-preview-text').addClass('show');
   });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  // const tabReviews = document.querySelectorAll('.tab-reviews__item-content');
-  // tabReviews.forEach((elem) => {
-  //     elem.addEventListener('click', (e) => {
-  //         if (e.target.classList.contains('js-tab-reviews-button')) {
-  //             const button = e.target;
-  //             const textWrap = elem.children[0];
-  //             button.classList.add('hide');
-  //             textWrap.classList.add('show');
-  //         }
-  //     });
-  // });
+  function windowSize() {
+    var windowWidth = $(window).width();
+    if (windowWidth >= 1201) {
+      //кнопка Каталог
+      $('.js-sidebar-head').click(function () {
+        $(this).toggleClass('hide');
+        $(this).siblings('.js-sidebar-body').toggleClass('hide');
+      });
 
+      //Открытие пунктов по наведению в Каталоге
+      $('.js-sidebar-body-item').hover(function () {
+        $('.sub-menu').removeClass('show');
+        $(this).find('.sub-menu').addClass('show');
+      });
+
+      // Скрыть все пункты каталога
+      $('.js-sidebar-body').mouseleave(function () {
+        $('.sub-menu').removeClass('show');
+      });
+    } else {
+      //Открытие пунктов по наведению в Каталоге
+      $('.js-sidebar-body-item').click(function () {
+        $('.sub-menu').removeClass('show');
+        $(this).find('.sub-menu').addClass('show');
+      });
+      // кнопка Каталог в мобилке
+      $('.js-header-sidebar-head').click(function () {
+        $(this).toggleClass('hide');
+        $(this).siblings('.js-header-sidebar-body').toggleClass('show');
+        $('body').toggleClass('dis-scroll');
+      });
+    }
+  }
+  $(window).on('load resize', windowSize);
+  $('.js-catalog-filter-name').click(function () {
+    $(this).toggleClass('active');
+    $(this).siblings('.js-catalog-filter-content').toggleClass('show');
+  });
+  $(function () {
+    $('#slider-price-count').slider({
+      range: true,
+      min: 0,
+      max: 9999,
+      values: ['1000', '9000'],
+      slide: function (event, ui) {
+        $('#slider-price-min').val(ui.values[0]);
+        $('#slider-price-max').val(ui.values[1]);
+      }
+    });
+    $("#speed").selectmenu();
+  });
+
+  // Фильтр
+  $('.js-filters').click(function () {
+    $('body').addClass('dis-scroll');
+    $('.js-catalog-filter').addClass('active');
+    // $(this).siblings('.js-catalog-filter-content').toggleClass('show');
+  });
+
+  $('.js-catalog-filter-close').click(function () {
+    $('body').removeClass('dis-scroll');
+    $('.js-catalog-filter').removeClass('active');
+    // $(this).siblings('.js-catalog-filter-content').toggleClass('show');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
   const tabReviews = document.querySelectorAll('.tab-reviews__item-content');
   tabReviews.forEach(elem => {
     elem.addEventListener('click', e => {
@@ -557,19 +611,18 @@ var productSingleThumbSwiper = new Swiper(".product-single-thumb-swiper", {
   slidesPerView: 6,
   direction: 'vertical',
   freeMode: false,
-  watchSlidesProgress: true
-  // breakpoints: {
-  //   769: {
-  //     spaceBetween: 10,
-  //     slidesPerView: 4,
-  //   },
-  //   320: {
-  //     spaceBetween: 8,
-  //     slidesPerView: 3,
-  //   },
-  // }
+  watchSlidesProgress: true,
+  breakpoints: {
+    769: {
+      spaceBetween: 10,
+      slidesPerView: 6
+    },
+    320: {
+      spaceBetween: 8,
+      slidesPerView: 3
+    }
+  }
 });
-
 var productSingleSwiper = new Swiper(".product-single-swiper", {
   spaceBetween: 10,
   navigation: {
@@ -580,17 +633,64 @@ var productSingleSwiper = new Swiper(".product-single-swiper", {
     swiper: productSingleThumbSwiper
   }
 });
-const cardPhotoSwiper = new Swiper('.card-photo-swiper', {
-  slidesPerView: 1,
-  spaceBetween: 16,
-  watchSlidesProgress: true,
-  scrollbar: {
-    el: ".card-photo-swiper__swiper-scrollbar",
-    hide: false,
-    draggable: true,
-    dragSize: 100
+class HvrSlider {
+  constructor(selector) {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(el => {
+      if (el.querySelectorAll('img').length > 1) {
+        const hvr = document.createElement('div');
+        hvr.classList.add('hvr');
+        const hvrImages = document.createElement('div');
+        hvrImages.classList.add('hvr__inner');
+        hvr.appendChild(hvrImages);
+        const hvrSectors = document.createElement('div');
+        hvrSectors.classList.add('hvr__sectors');
+        hvrImages.appendChild(hvrSectors);
+        const hvrDots = document.createElement('div');
+        hvrDots.classList.add('hvr__dots');
+        hvr.appendChild(hvrDots);
+        el.parentNode.insertBefore(hvr, el);
+        hvrImages.prepend(el);
+        const hvrImagesArray = hvr.querySelectorAll('img');
+        hvrImagesArray.forEach(() => {
+          hvrSectors.insertAdjacentHTML('afterbegin', '<div class="hvr__sector"></div>');
+          hvrDots.insertAdjacentHTML('afterbegin', '<div class="hvr__dot"></div>');
+        });
+        hvrDots.firstChild.classList.add('hvr__dot--active');
+        const setActiveEl = function (targetEl) {
+          const index = [...hvrSectors.children].indexOf(targetEl);
+          hvrImagesArray.forEach((img, idx) => {
+            if (index == idx) {
+              img.style.display = 'block';
+            } else {
+              img.style.display = 'none';
+            }
+          });
+          hvr.querySelectorAll('.hvr__dot').forEach((dot, idx) => {
+            if (index == idx) {
+              dot.classList.add('hvr__dot--active');
+            } else {
+              dot.classList.remove('hvr__dot--active');
+            }
+          });
+        };
+        hvrSectors.addEventListener('mouseover', function (e) {
+          if (e.target.matches('.hvr__sector')) {
+            setActiveEl(e.target);
+          }
+        });
+        hvrSectors.addEventListener('touchmove', function (e) {
+          const position = e.changedTouches[0];
+          const target = document.elementFromPoint(position.clientX, position.clientY);
+          if (target.matches('.hvr__sector')) {
+            setActiveEl(target);
+          }
+        });
+      }
+    });
   }
-});
+}
+new HvrSlider('.hvr__images');
 
 /***/ }),
 
@@ -1335,4 +1435,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map

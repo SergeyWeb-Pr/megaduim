@@ -150,6 +150,78 @@
                 line-height: 22px;
             }
         }
+
+        &__mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $tablet) {
+    .card__container {
+        flex-direction: column;
+    }
+
+    .card-content__size {
+        display: none;
+    }
+
+    .card-content__bottom {
+        display: none;
+    }
+
+    .card-product__favourites {
+        display: none;
+    }
+
+    .card-image {
+        order: 2;
+    }
+
+    .card-content {
+        order: 1;
+        margin-bottom: 8px;
+    }
+
+    .card-content__mobile {
+        display: block;
+        order: 3;
+
+        &-inner {
+            box-shadow: 0px 4px 16px 0px #3E4BC626;
+            padding: 20px 12px 12px 12px;
+            border-radius: 8px;
+        }
+
+        .card-content__size {
+            display: block;
+            margin-bottom: 40px;
+            border-top: none;
+        }
+
+        .card-content__bottom {
+            display: flex;
+        }
+
+        .card-product__favourites {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: $mob) {
+    .product-single-swiper {
+        width: 100%;
+    }
+
+    .card-image {
+        display: grid;
+        grid-template-columns: auto 80px;
+        column-gap: 8px;
+        overflow: hidden;
+        height: auto;
     }
 }
 
@@ -322,5 +394,60 @@
         border-radius: 12px;
         margin-left: auto;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mob) {
+    .block-info {
+        .tabs__nav {
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-item {
+                width: 100%;
+                background-color: transparent;
+                border-radius: 0px;
+                border: none;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: url(../img/icon/ui-icon-arrow-down.svg);
+                    @include bg-cover;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $greyLine;
+                }
+            }
+
+            &-btn {
+                width: 100%;
+                padding: 16px 0;
+                text-align: left;
+            }
+        }
+    }
+
+    .tab-descr {
+        padding: 0;
+        border: none;
+
+        &__inner {
+            columns: 1;
+        }
+    }
+
+    .tab-content {
+        padding: 0;
+        border: none;
     }
 }

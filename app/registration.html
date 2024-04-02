@@ -18,10 +18,13 @@
   <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ArialMT.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
@@ -114,34 +117,163 @@
         <button class="btn-reset search__button"></button>
       </div>
     </div>
+    <div class="header-menu">
+      <button class="btn-reset sidebar__head js-header-sidebar-head">
+        <div class="sidebar__head-icon"></div>
+        <div class="sidebar__head-name">Каталог</div>
+      </button>
+      <div class="header-menu__inner js-header-sidebar-body">
+        <div class="header-menu__sidebar sidebar">
+          <ul class="sidebar__body">
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Электротехника</a>
+              <button class="btn-reset sidebar__body-button"></button>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Котлы и котельное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Котлы 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Котлы 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Климатическое оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Водонагреватели</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Детали трубопроводов, фитинги, хомутф, крепеж</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Наружное водоснабжение</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Пожарное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Банки расширительные, ёмкости</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Вентиляционное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Теплоизоляция и уплотнительные материалы</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav" title="">
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Бренды</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
+<div class="header-line"></div>
     <main class="main">
       <section class="section section-hero registration">
     <div class="container section-hero__container registration__container">
         <div class="registration__sidebar sidebar">
-            <div class="sidebar__head">
-                <div class="sidebar__head-button"></div>
+            <button class="btn-reset sidebar__head js-sidebar-head">
+                <div class="sidebar__head-icon"></div>
                 <div class="sidebar__head-name">Каталог</div>
-            </div>
-            <div class="sidebar__body">
-                <a href="#" class="sidebar__body-item">
-                    <div class="sidebar__body-name">Электротехника</div>
-                    <div class="sidebar__body-button"></div>
-                </a>
-                <a href="#" class="sidebar__body-item">
-                    <div class="sidebar__body-name">Котлы и котельное оборудование</div>
-                    <div class="sidebar__body-button"></div>
-                </a>
-                <a href="#" class="sidebar__body-item">
-                    <div class="sidebar__body-name">Климатическое оборудование</div>
-                    <div class="sidebar__body-button"></div>
-                </a>
-                <a href="#" class="sidebar__body-item">
-                    <div class="sidebar__body-name">Водонагреватели</div>
-                    <div class="sidebar__body-button"></div>
-                </a>
-            </div>
+            </button>
+            <ul class="sidebar__body js-sidebar-body">
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Электротехника</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">Электротехника 2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Электротехника 2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Электротехника 2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Электротехника 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Котлы и котельное оборудование</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="#">Котлы 2</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Котлы 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Климатическое оборудование</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Водонагреватели</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Детали трубопроводов, фитинги, хомутф, крепеж</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Наружное водоснабжение</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Пожарное оборудование</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Банки расширительные, ёмкости</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Вентиляционное оборудование</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+                <li class="sidebar__body-item js-sidebar-body-item">
+                    <a href="#" class="sidebar__body-name">Теплоизоляция и уплотнительные материалы</a>
+                    <button class="btn-reset sidebar__body-button"></button>
+                </li>
+            </ul>
         </div>
         <div class="registration__content">
             <div class="breadcrumbs">
@@ -163,6 +295,7 @@
   <div class="breadcrumbs__separator"></div>
   <span>Американки</span>
 </div>
+            <a href="#" class="button-link-left reg-comment__link --none">Назад</a>
             <h1 class="section-hero__title registration__title">Регистрация</h1>
             <div action="#" class="form registration__form">
                 <div class="form__title">Контактные данные</div>
@@ -197,7 +330,7 @@
                 <textarea name="" id="" class="input-reset form__textarea reg-comment__textarea"
                     placeholder="Напишите ваш комментарий"></textarea>
                 <div class="reg-comment__buttons">
-                    <a href="" class="button-link-left reg-comment__link">Назад </a>
+                    <a href="#" class="button-link-left reg-comment__link">Назад</a>
                     <button class="button2 btn-reset reg-comment__button">Зарегистрироваться</button>
                 </div>
             </div>

@@ -13,6 +13,12 @@
 }
 
 .reg-comment {
+    &__link {
+        &.--none {
+            display: none;
+        }
+    }
+
     &__title {
         font-family: "Circe";
         font-size: 26px;
@@ -35,5 +41,70 @@
 
     &__button {
         padding: 0 56px;
+    }
+}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $tablet) {
+    .section-hero__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .registration__sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mob) {
+    .registration__title {
+        font-size: 26px;
+        line-height: 38px;
+        margin-bottom: 16px;
+    }
+
+    .registration__form-radio {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6px;
+        margin-bottom: 40px;
+    }
+
+    .registration__form {
+        margin-bottom: 16px;
+    }
+
+    .reg-comment__title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    .reg-comment__textarea {
+        height: 124px;
+        margin-bottom: 20px;
+    }
+
+    .reg-comment__buttons {
+        margin-left: 0;
+        width: 100%;
+
+        .reg-comment__link {
+            display: none;
+        }
+    }
+
+    .reg-comment__button {
+        width: 100%;
+    }
+
+    .reg-comment {
+        &__link {
+            &.--none {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+        }
     }
 }

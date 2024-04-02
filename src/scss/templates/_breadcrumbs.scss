@@ -27,3 +27,9 @@
         @include bg-cover;
     }
 }
+
+@media screen and (max-width: $mob) {
+    .breadcrumbs {
+        margin-bottom: 20px;
+    }
+}

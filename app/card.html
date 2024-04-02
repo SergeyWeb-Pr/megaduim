@@ -18,10 +18,13 @@
   <link rel="preload" href="fonts/Gilroy-Semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ArialMT.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
@@ -114,8 +117,91 @@
         <button class="btn-reset search__button"></button>
       </div>
     </div>
+    <div class="header-menu">
+      <button class="btn-reset sidebar__head js-header-sidebar-head">
+        <div class="sidebar__head-icon"></div>
+        <div class="sidebar__head-name">Каталог</div>
+      </button>
+      <div class="header-menu__inner js-header-sidebar-body">
+        <div class="header-menu__sidebar sidebar">
+          <ul class="sidebar__body">
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Электротехника</a>
+              <button class="btn-reset sidebar__body-button"></button>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Электротехника 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Котлы и котельное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">Котлы 2</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Котлы 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Климатическое оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Водонагреватели</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Детали трубопроводов, фитинги, хомутф, крепеж</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Наружное водоснабжение</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Пожарное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Банки расширительные, ёмкости</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Вентиляционное оборудование</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+            <li class="sidebar__body-item js-sidebar-body-item">
+              <a href="#" class="sidebar__body-name">Теплоизоляция и уплотнительные материалы</a>
+              <button class="btn-reset sidebar__body-button"></button>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav" title="">
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Бренды</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
+<div class="header-line"></div>
     <main class="main">
       <section class="section card">
     <div class="container">
@@ -280,6 +366,49 @@
                 <div class="card-product__favourites">
                     <div class="card-product__favourites-icon"></div>
                     <span>Добавить в избранное</span>
+                </div>
+            </div>
+            <div class="card-content__mobile">
+                <div class="card-content__size">
+                    <div class="card-content__size-name">Другие размеры</div>
+                    <div class="card-content__size-items">
+                        <div class="card-content__size-item">20 мм х ½''</div>
+                        <div class="card-content__size-item">20 мм х ¾''</div>
+                        <div class="card-content__size-item">26 мм х ¾''</div>
+                        <div class="card-content__size-item">32 мм х 1''</div>
+                        <div class="card-content__size-item">20 мм х ½''</div>
+                        <div class="card-content__size-item">20 мм х ½''</div>
+                        <div class="card-content__size-item">20 мм х ½''</div>
+                    </div>
+                </div>
+                <div class="card-content__mobile-inner">
+                    <div class="card-content__bottom">
+                        <div class="card-product__count">
+                            <button class="btn-reset card-product__count-button card-product__count-button-decrease">
+                                <svg width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round">
+                                    </path>
+                                </svg>
+                            </button>
+                            <input type="number" value="1" class="card-product__count-num">
+                            <button class="btn-reset card-product__count-button card-product__count-button-increase">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6.5H11" stroke="#919191" stroke-width="1.5" stroke-linecap="round">
+                                    </path>
+                                    <path d="M6 1.5L6 11.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="btn-reset button2 card-content__other">В корзину</button>
+                        <!-- <button class="btn-reset button2 card-content__other check">Похожие товары</button> -->
+                    </div>
+                    <div class="card-product__favourites">
+                        <div class="card-product__favourites-icon"></div>
+                        <span>Добавить в избранное</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -543,16 +672,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -605,16 +729,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -672,16 +791,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -734,16 +848,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -796,16 +905,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -858,16 +962,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">
@@ -920,16 +1019,11 @@
                     <div class="card-product">
     <div class="card-product__head">
         <div class="card-product__image">
-            <div class="swiper card-photo-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="img/image/image2.png" class="image" width="" height="" alt="">
-                    </div>
-                </div>
-                <div class="swiper-scrollbar card-photo-swiper__swiper-scrollbar"></div>
+            <div class="hvr__images">
+                <img class="hvr__image" src="img/products/product1.png">
+                <img class="hvr__image" src="img/products/product2.png">
+                <img class="hvr__image" src="img/products/product3.png">
+                <img class="hvr__image" src="img/products/product4.png">
             </div>
         </div>
         <div class="card-product__content-mob">

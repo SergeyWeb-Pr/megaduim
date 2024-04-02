@@ -44,7 +44,27 @@
         width: 7px;
         height: 12px;
     }
+}
 
+.button-link-head {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $greyLine;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow/arrow-link-head.svg);
+        @include bg-cover;
+        width: 13px;
+        height: 22px;
+    }
 }
 
 .button-link-left {
@@ -125,4 +145,19 @@
     font-weight: 700;
     line-height: 23.58px;
     color: $blue;
+}
+
+.button-clear {
+    @include flexCCenter;
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: $blueLight;
+
+    font-family: "Circe";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.58px;
+    color: $dark;
 }

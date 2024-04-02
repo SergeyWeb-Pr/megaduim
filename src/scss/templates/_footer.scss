@@ -10,3 +10,10 @@
         color: $white;
     }
 }
+
+@media screen and (max-width: $mob) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

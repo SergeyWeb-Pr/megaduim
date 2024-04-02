@@ -213,9 +213,39 @@
                 height: 24px;
                 position: absolute;
                 left: 0;
-                bottom: 1px;
+                top: 50%;
+                transform: translateY(-50%);
                 background-image: url(../img/icon/radio-empty.svg);
                 @include bg-cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mob) {
+    .form__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form__title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .form-radio__item {
+        height: 40px;
+        padding: 10px;
+
+        & label {
+            padding-left: 18px;
+            font-size: 14px;
+            line-height: 20px;
+
+            &::before {
+                width: 20px;
+                height: 20px;
+                left: -5px;
             }
         }
     }
